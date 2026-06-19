@@ -1,0 +1,67 @@
+[
+    {
+        "id": "ura_finale",
+        "name": "URA Finale",
+        "template": "ura_finale.png"
+    },
+    {
+        "id": "re_aoharu",
+        "name": "Re Aoharu",
+        "template": "re_aoharu.png"
+    },
+    {
+        "id": "trackblazer",
+        "name": "Trackblazer",
+        "template": "trackblazer.png"
+    },
+    {
+        "id": "grand_live",
+        "name": "Grand Live",
+        "template": "grand_live.png"
+    },
+    {
+        "id": "grand_master",
+        "name": "Grand Master",
+        "template": "grand_master.png"
+    },
+    {
+        "id": "project_larc",
+        "name": "Project L'arc",
+        "template": "project_larc.png"
+    },
+    {
+        "id": "uaf_ready_go",
+        "name": "U.A.F Ready GO!",
+        "template": "uaf_ready_go.png"
+    },
+    {
+        "id": "gourmet_parade",
+        "name": "Gourmet Parade",
+        "template": "gourmet_parade.png"
+    },
+    {
+        "id": "mecha_umamusume",
+        "name": "Mecha Umamusume",
+        "template": "mecha_umamusume.png"
+    },
+    {
+        "id": "the_twinkle_legends",
+        "name": "The Twinkle Legends",
+        "template": "the_twinkle_legends.png"
+    },
+    {
+        "id": "design_your_island",
+        "name": "Design Your Island",
+        "template": "design_your_island.png"
+    },
+    {
+        "id": "yukoma_hot_springs",
+        "name": "Yukoma Hot Springs",
+        "template": "yukoma_hot_springs.png"
+    },
+    {
+        "id": "beyond_dreams",
+        "name": "Beyond Dreams",
+        "template": "beyond_dreams.png"
+    }
+]
