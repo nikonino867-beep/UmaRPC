@@ -61,7 +61,7 @@ UmaRPC uses image/template detection to recognize UI elements from the game scre
 3. Start the app:
 
    ```
-   UmaRPC.bat
+   UmaRPC.py
    ```
    or create a windows shortcut from 
    ```
