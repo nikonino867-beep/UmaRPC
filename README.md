@@ -38,18 +38,17 @@ UmaRPC uses image/template detection to recognize UI elements from the game scre
 * Windows OS
 * Required Python packages:
 
-  * `psutil` 
-  * `keyboard`
-  * `customtkinter`
-  * `pystray`
-  * `pillow`
-  * `rapidfuzz`
-  * `pypresence`
-  * `rapidocr-onnxruntime`
-  * `opencv-python`
-  * `mss`
-  * `numpy`
-
+  * 'psutil'
+  * 'keyboard'
+  * 'customtkinter'
+  * 'pystray'
+  * 'pillow'
+  * 'rapidfuzz'
+  * 'pypresence'
+  * 'rapidocr-onnxruntime'
+  * 'opencv-python'
+  * 'windows-capture'
+  * 'numpy'
 ## Setup
 
 1. Clone or download this repository
@@ -84,6 +83,7 @@ UmaRPC uses image/template detection to recognize UI elements from the game scre
 * Only Work in Landscape and fullscreen mode
 * Detection accuracy depends on screen visibility
 * It's still unstable at the moment, as it uses image matching.
+* Need to open "composite" menu to update the RPC
 
 ---
 
@@ -98,6 +98,7 @@ UMA RPC/
 ├── templates/
 ├── First time Setup.bat
 ├── UmaRPC.bat
+├── models/
 └── assets/
 ```
 
@@ -119,3 +120,6 @@ Feel free to modify for your own setup.
 
 Built by Teguh and ChatGPT
 Powered by Python + Discord Rich Presence API
+
+
+The best *vibecoding* project ever—*for me*
