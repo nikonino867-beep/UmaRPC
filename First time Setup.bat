@@ -30,16 +30,12 @@ echo 1. This tool still has some limitations:
 echo    - OCR may occasionally retry while UI elements are fading in.
 echo    - Does not work in Portrait mode.
 echo.
-echo 2. You MUST install the Hachimi mod first.
-echo    Without Hachimi / matching localized data, some features
-echo    might not work as expected.
-echo.
-echo 3. Umamusume MUST be set to Landscape mode in game settings.
+echo 2. Umamusume MUST be set to Landscape mode in game settings.
 echo    If set to Portrait, the Detector will not work.
 echo.
-echo 4. Make sure Discord is open before running UmaRPC.py.
+echo 3. Make sure Discord is open before running UmaRPC.py.
 echo.
-echo 5. This script only installs Python dependencies.
+echo 4. This script only installs Python dependencies.
 echo    It does NOT install Hachimi and does NOT change game settings.
 echo.
 echo ==================================================
@@ -59,16 +55,12 @@ echo 1. Tool ini masih punya beberapa kekurangan:
 echo    - OCR terkadang akan mengulang pembacaan saat elemen UI masih fade/transparan.
 echo    - Tidak berfungsi di mode portrait.
 echo.
-echo 2. Wajib install mod Hachimi dulu.
-echo    Tanpa Hachimi / localized data yang sesuai, beberapa fitur
-echo    bisa nggak jalan seperti yang diharapkan.
-echo.
-echo 3. Umamusume WAJIB pakai mode Landscape di pengaturan game.
+echo 2. Umamusume WAJIB pakai mode Landscape di pengaturan game.
 echo    Kalau Portrait, Detektor tidak akan bekerja.
 echo.
-echo 4. Pastikan Discord sudah dibuka sebelum menjalankan UmaRPC.py.
+echo 3. Pastikan Discord sudah dibuka sebelum menjalankan UmaRPC.py.
 echo.
-echo 5. Script ini hanya install dependency Python.
+echo 4. Script ini hanya install dependency Python.
 echo    Script ini TIDAK menginstall Hachimi dan TIDAK mengubah setting game.
 echo.
 echo ==================================================
@@ -122,15 +114,9 @@ echo ==================================================
 if "%lang%"=="1" (
     echo Setup complete.
     echo.
-    echo How to run:
-    echo py UmaRPC.py
-    echo.
     echo If you encounter 'module not found' errors, run this setup file again.
 ) else (
     echo Setup selesai.
-    echo.
-    echo Cara jalanin:
-    echo py UmaRPC.py
     echo.
     echo Kalau ada error module not found, jalanin file setup ini lagi.
 )
