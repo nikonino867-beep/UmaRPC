@@ -1,1017 +1,1287 @@
 [
     {
         "name": "Zenno Rob Roy ",
-        "id": "zenno_rob_roy_original"
+        "id": "zenno_rob_roy_original",
+        "jpname": "ゼンノロブロイ"
     },
     {
         "name": "Zenno Rob Roy (Autumn)",
-        "id": "zenno_rob_roy_autumn"
+        "id": "zenno_rob_roy_autumn",
+        "jpname": "ゼンノロブロイ"
     },
     {
         "name": "Yukino Bijin ",
-        "id": "yukino_bijin_original"
+        "id": "yukino_bijin_original",
+        "jpname": "ユキノビジン"
     },
     {
         "name": "Yukino Bijin (Valentine)",
-        "id": "yukino_bijin_valentine"
+        "id": "yukino_bijin_valentine",
+        "jpname": "ユキノビジン"
     },
     {
         "name": "Yamanin Zephyr ",
-        "id": "yamanin_zephyr_original"
+        "id": "yamanin_zephyr_original",
+        "jpname": "ヤマニンゼファー"
     },
     {
         "name": "Yamanin Zephyr (Valentine)",
-        "id": "yamanin_zephyr_valentine"
+        "id": "yamanin_zephyr_valentine",
+        "jpname": "ヤマニンゼファー"
     },
     {
         "name": "Yaeno Muteki ",
-        "id": "yaeno_muteki_original"
+        "id": "yaeno_muteki_original",
+        "jpname": "ヤエノムテキ"
     },
     {
         "name": "Yaeno-Muteki (Warfare)",
-        "id": "yaeno_muteki_warfare"
+        "id": "yaeno_muteki_warfare",
+        "jpname": "ヤエノムテキ"
     },
     {
         "name": "Wonder Acute ",
-        "id": "wonder_acute_original"
+        "id": "wonder_acute_original",
+        "jpname": "ワンダーアキュート"
     },
     {
         "name": "Wonder Acute (Onsen)",
-        "id": "wonder_acute_onsen"
+        "id": "wonder_acute_onsen",
+        "jpname": "ワンダーアキュート"
     },
     {
         "name": "Winning Ticket ",
-        "id": "winning_ticket_original"
+        "id": "winning_ticket_original",
+        "jpname": "ウイニングチケット"
     },
     {
         "name": "Winning Ticket (Steampunk)",
-        "id": "winning_ticket_steampunk"
+        "id": "winning_ticket_steampunk",
+        "jpname": "ウイニングチケット"
     },
     {
         "name": "Winning Ticket (U.A.F.)",
-        "id": "winning_ticket_uaf"
+        "id": "winning_ticket_uaf",
+        "jpname": "ウイニングチケット"
     },
     {
         "name": "Win Variation ",
-        "id": "win_variation_original"
+        "id": "win_variation_original",
+        "jpname": "ウインバリアシオン"
     },
     {
         "name": "Vodka ",
-        "id": "vodka_original"
+        "id": "vodka_original",
+        "jpname": "ウオッカ"
     },
     {
         "name": "Vodka (Christmas)",
-        "id": "vodka_christmas"
+        "id": "vodka_christmas",
+        "jpname": "ウオッカ"
     },
     {
         "name": "Vivlos ",
-        "id": "vivlos_original"
+        "id": "vivlos_original",
+        "jpname": "ヴィブロス"
     },
     {
         "name": "Vivlos (Summer)",
-        "id": "vivlos_summer"
+        "id": "vivlos_summer",
+        "jpname": "ヴィブロス"
     },
     {
         "name": "Victoire Pisa ",
-        "id": "victoire_pisa_original"
+        "id": "victoire_pisa_original",
+        "jpname": "ヴィクトワールピサ"
     },
     {
         "name": "Verxina ",
-        "id": "verxina_original"
+        "id": "verxina_original",
+        "jpname": "ヴィルシーナ"
     },
     {
         "name": "Twin Turbo ",
-        "id": "twin_turbo_original"
+        "id": "twin_turbo_original",
+        "jpname": "ツインターボ"
     },
     {
         "name": "Tsurumaru Tsuyoshi ",
-        "id": "tsurumaru_tsuyoshi_original"
+        "id": "tsurumaru_tsuyoshi_original",
+        "jpname": "ツルマルツヨシ"
     },
     {
         "name": "Transcend ",
-        "id": "transcend_original"
+        "id": "transcend_original",
+        "jpname": "トランセンド"
     },
     {
         "name": "Transcend (Onsen)",
-        "id": "transcend_onsen"
+        "id": "transcend_onsen",
+        "jpname": "トランセンド"
     },
     {
         "name": "Tosen Jordan ",
-        "id": "tosen_jordan_original"
+        "id": "tosen_jordan_original",
+        "jpname": "トーセンジョーダン"
     },
     {
         "name": "Tosen Jordan (Summer Trip)",
-        "id": "tosen_jordan_summer_trip"
+        "id": "tosen_jordan_summer_trip",
+        "jpname": "トーセンジョーダン"
     },
     {
         "name": "Tosen Jordan (Halloween)",
-        "id": "tosen_jordan_halloween"
+        "id": "tosen_jordan_halloween",
+        "jpname": "トーセンジョーダン"
     },
     {
         "name": "Tokai Teio ",
-        "id": "tokai_teio_original"
+        "id": "tokai_teio_original",
+        "jpname": "トウカイテイオー"
     },
     {
         "name": "Tokai Teio (Anime Collab)",
-        "id": "tokai_teio_anime_collab"
+        "id": "tokai_teio_anime_collab",
+        "jpname": "トウカイテイオー"
     },
     {
         "name": "Tokai Teio (Festival)",
-        "id": "tokai_teio_festival"
+        "id": "tokai_teio_festival",
+        "jpname": "トウカイテイオー"
     },
     {
         "name": "TM Opera O ",
-        "id": "tm_opera_o_original"
+        "id": "tm_opera_o_original",
+        "jpname": "テイエムオペラオー"
     },
     {
         "name": "TM Opera O (New Year)",
-        "id": "tm_opera_o_new_year"
+        "id": "tm_opera_o_new_year",
+        "jpname": "テイエムオペラオー"
     },
     {
         "name": "Tap Dance City ",
-        "id": "tap_dance_city_original"
+        "id": "tap_dance_city_original",
+        "jpname": "タップダンスシチー"
     },
     {
         "name": "Tap Dance City (Ballroom)",
-        "id": "tap_dance_city_ballroom"
+        "id": "tap_dance_city_ballroom",
+        "jpname": "タップダンスシチー"
     },
     {
         "name": "Tanino Gimlet ",
-        "id": "tanino_gimlet_original"
+        "id": "tanino_gimlet_original",
+        "jpname": "タニノギムレット"
     },
     {
         "name": "Tanino Gimlet (Ballroom)",
-        "id": "tanino_gimlet_ballroom"
+        "id": "tanino_gimlet_ballroom",
+        "jpname": "タニノギムレット"
     },
     {
         "name": "Tamamo Cross ",
-        "id": "tamamo_cross_original"
+        "id": "tamamo_cross_original",
+        "jpname": "タマモクロス"
     },
     {
         "name": "Tamamo Cross (Festival)",
-        "id": "tamamo_cross_festival"
+        "id": "tamamo_cross_festival",
+        "jpname": "タマモクロス"
     },
     {
         "name": "Taiki Shuttle ",
-        "id": "taiki_shuttle_original"
+        "id": "taiki_shuttle_original",
+        "jpname": "タイキシャトル"
     },
     {
         "name": "Taiki Shuttle (Camping)",
-        "id": "taiki_shuttle_camping"
+        "id": "taiki_shuttle_camping",
+        "jpname": "タイキシャトル"
     },
     {
         "name": "Taiki Shuttle (Valentine)",
-        "id": "taiki_shuttle_valentine"
+        "id": "taiki_shuttle_valentine",
+        "jpname": "タイキシャトル"
     },
     {
         "name": "Symboli Rudolf ",
-        "id": "symboli_rudolf_original"
+        "id": "symboli_rudolf_original",
+        "jpname": "シンボリルドルフ"
     },
     {
         "name": "Symboli Rudolf (Festival)",
-        "id": "symboli_rudolf_festival"
+        "id": "symboli_rudolf_festival",
+        "jpname": "シンボリルドルフ"
     },
     {
         "name": "Symboli Kris S ",
-        "id": "symboli_kris_s_original"
+        "id": "symboli_kris_s_original",
+        "jpname": "シンボリクリスエス"
     },
     {
         "name": "Symboli Kris S (Halloween)",
-        "id": "symboli_kris_s_halloween"
+        "id": "symboli_kris_s_halloween",
+        "jpname": "シンボリクリスエス"
     },
     {
         "name": "Sweep Tosho ",
-        "id": "sweep_tosho_original"
+        "id": "sweep_tosho_original",
+        "jpname": "スイープトウショウ"
     },
     {
         "name": "Sweep Tosho (Wedding)",
-        "id": "sweep_tosho_wedding"
+        "id": "sweep_tosho_wedding",
+        "jpname": "スイープトウショウ"
     },
     {
         "name": "Super Creek ",
-        "id": "super_creek_original"
+        "id": "super_creek_original",
+        "jpname": "スーパークリーク"
     },
     {
         "name": "Super Creek (Halloween)",
-        "id": "super_creek_halloween"
+        "id": "super_creek_halloween",
+        "jpname": "スーパークリーク"
     },
     {
         "name": "Super Creek (Warfare)",
-        "id": "super_creek_warfare"
+        "id": "super_creek_warfare",
+        "jpname": "スーパークリーク"
     },
     {
         "name": "Still in Love ",
-        "id": "still_in_love_original"
+        "id": "still_in_love_original",
+        "jpname": "スティルインラブ"
     },
     {
         "name": "Stay Gold ",
-        "id": "stay_gold_original"
+        "id": "stay_gold_original",
+        "jpname": "ステイゴールド"
     },
     {
         "name": "Special Week ",
-        "id": "special_week_original"
+        "id": "special_week_original",
+        "jpname": "スペシャルウィーク"
     },
     {
         "name": "Special Week (Summer)",
-        "id": "special_week_summer"
+        "id": "special_week_summer",
+        "jpname": "スペシャルウィーク"
     },
     {
         "name": "Special Week (Commander)",
-        "id": "special_week_commander"
+        "id": "special_week_commander",
+        "jpname": "スペシャルウィーク"
     },
     {
         "name": "Sounds of Earth ",
-        "id": "sounds_of_earth_original"
+        "id": "sounds_of_earth_original",
+        "jpname": "サウンズオブアース"
     },
     {
         "name": "Sounds of Earth (Valentine)",
-        "id": "sounds_of_earth_valentine"
+        "id": "sounds_of_earth_valentine",
+        "jpname": "サウンズオブアース"
     },
     {
         "name": "Smart Falcon ",
-        "id": "smart_falcon_original"
+        "id": "smart_falcon_original",
+        "jpname": "スマートファルコン"
     },
     {
         "name": "Smart Falcon (Grand Live)",
-        "id": "smart_falcon_grand_live"
+        "id": "smart_falcon_grand_live",
+        "jpname": "スマートファルコン"
     },
     {
         "name": "Smart Falcon (Parade)",
-        "id": "smart_falcon_parade"
+        "id": "smart_falcon_parade",
+        "jpname": "スマートファルコン"
     },
     {
         "name": "Sirius Symboli ",
-        "id": "sirius_symboli_original"
+        "id": "sirius_symboli_original",
+        "jpname": "シリウスシンボリ"
     },
     {
         "name": "Sirius Symboli (The Twinkle Legends)",
-        "id": "sirius_symboli_the_twinkle_legends"
+        "id": "sirius_symboli_the_twinkle_legends",
+        "jpname": "シリウスシンボリ"
     },
     {
         "name": "Silence Suzuka ",
-        "id": "silence_suzuka_original"
+        "id": "silence_suzuka_original",
+        "jpname": "サイレンススズカ"
     },
     {
         "name": "Silence Suzuka (Summer)",
-        "id": "silence_suzuka_summer"
+        "id": "silence_suzuka_summer",
+        "jpname": "サイレンススズカ"
     },
     {
         "name": "Shinko Windy ",
-        "id": "shinko_windy_original"
+        "id": "shinko_windy_original",
+        "jpname": "シンコウウインディ"
     },
     {
         "name": "Seiun Sky ",
-        "id": "seiun_sky_original"
+        "id": "seiun_sky_original",
+        "jpname": "セイウンスカイ"
     },
     {
         "name": "Seiun Sky (Ballroom)",
-        "id": "seiun_sky_ballroom"
+        "id": "seiun_sky_ballroom",
+        "jpname": "セイウンスカイ"
     },
     {
         "name": "Seeking the Pearl ",
-        "id": "seeking_the_pearl_original"
+        "id": "seeking_the_pearl_original",
+        "jpname": "シーキングザパール"
     },
     {
         "name": "Seeking the Pearl (Halloween)",
-        "id": "seeking_the_pearl_halloween"
+        "id": "seeking_the_pearl_halloween",
+        "jpname": "シーキングザパール"
     },
     {
         "name": "Satono Diamond ",
-        "id": "satono_diamond_original"
+        "id": "satono_diamond_original",
+        "jpname": "サトノダイヤモンド"
     },
     {
         "name": "Satono Diamond (New Year)",
-        "id": "satono_diamond_new_year"
+        "id": "satono_diamond_new_year",
+        "jpname": "サトノダイヤモンド"
     },
     {
         "name": "Satono Diamond (Project L'Arc)",
-        "id": "satono_diamond_project_larc"
+        "id": "satono_diamond_project_larc",
+        "jpname": "サトノダイヤモンド"
     },
     {
         "name": "Satono Crown ",
-        "id": "satono_crown_original"
+        "id": "satono_crown_original",
+        "jpname": "サトノクラウン"
     },
     {
         "name": "Satono Crown (Summer)",
-        "id": "satono_crown_summer"
+        "id": "satono_crown_summer",
+        "jpname": "サトノクラウン"
     },
     {
         "name": "Sakura Laurel ",
-        "id": "sakura_laurel_original"
+        "id": "sakura_laurel_original",
+        "jpname": "サクラローレル"
     },
     {
         "name": "Sakura Laurel (New Year)",
-        "id": "sakura_laurel_new_year"
+        "id": "sakura_laurel_new_year",
+        "jpname": "サクラローレル"
     },
     {
         "name": "Sakura Chiyono O ",
-        "id": "sakura_chiyono_o_original"
+        "id": "sakura_chiyono_o_original",
+        "jpname": "サクラチヨノオー"
     },
     {
         "name": "Sakura Chiyono O (Ballroom)",
-        "aliases": [
-            "Fleur Enneigée"
-        ],
-        "id": "sakura_chiyono_o_ballroom"
+        "id": "sakura_chiyono_o_ballroom",
+        "jpname": "サクラチヨノオー"
     },
     {
         "name": "Sakura Bakushin O ",
-        "id": "sakura_bakushin_o_original"
+        "id": "sakura_bakushin_o_original",
+        "jpname": "サクラバクシンオー"
     },
     {
         "name": "Sakura Bakushin O (Sports Festival)",
-        "id": "sakura_bakushin_o_sports_festival"
+        "id": "sakura_bakushin_o_sports_festival",
+        "jpname": "サクラバクシンオー"
     },
     {
         "name": "Sakura Bakushin O (Ballroom)",
-        "id": "sakura_bakushin_o_ballroom"
+        "id": "sakura_bakushin_o_ballroom",
+        "jpname": "サクラバクシンオー"
     },
     {
         "name": "Royce and Royce ",
-        "id": "royce_and_royce_original"
+        "id": "royce_and_royce_original",
+        "jpname": "ロイスアンドロイス"
     },
     {
         "name": "Rice Shower ",
-        "id": "rice_shower_original"
+        "id": "rice_shower_original",
+        "jpname": "ライスシャワー"
     },
     {
         "name": "Rice Shower (Halloween)",
-        "id": "rice_shower_halloween"
+        "id": "rice_shower_halloween",
+        "jpname": "ライスシャワー"
     },
     {
         "name": "Rice Shower (Great Food Festival)",
-        "id": "rice_shower_great_food_festival"
+        "id": "rice_shower_great_food_festival",
+        "jpname": "ライスシャワー"
     },
     {
         "name": "Rhein Kraft ",
-        "id": "rhein_kraft_original"
+        "id": "rhein_kraft_original",
+        "jpname": "ラインクラフト"
     },
     {
         "name": "Rhein Kraft (Alt Version)",
-        "id": "rhein_kraft_alt_version"
+        "id": "rhein_kraft_alt_version",
+        "jpname": "ラインクラフト"
     },
     {
         "name": "Orfevre ",
-        "id": "orfevre_original"
+        "id": "orfevre_original",
+        "jpname": "オルフェーヴル"
     },
     {
         "name": "Oguri Cap ",
-        "id": "oguri_cap_original"
+        "id": "oguri_cap_original",
+        "jpname": "オグリキャップ"
     },
     {
         "name": "Oguri Cap (Christmas)",
-        "id": "oguri_cap_christmas"
+        "id": "oguri_cap_christmas",
+        "jpname": "オグリキャップ"
     },
     {
         "name": "Oguri Cap (Anime Collab)",
-        "id": "oguri_cap_anime_collab"
+        "id": "oguri_cap_anime_collab",
+        "jpname": "オグリキャップ"
     },
     {
         "name": "North Flight ",
-        "id": "north_flight_original"
+        "id": "north_flight_original",
+        "jpname": "ノースフライト"
     },
     {
         "name": "North Flight (Ballroom)",
-        "id": "north_flight_ballroom"
+        "id": "north_flight_ballroom",
+        "jpname": "ノースフライト"
     },
     {
         "name": "No Reason ",
-        "id": "no_reason_original"
+        "id": "no_reason_original",
+        "jpname": "ノーリーズン"
     },
     {
         "name": "Nishino Flower ",
-        "id": "nishino_flower_original"
+        "id": "nishino_flower_original",
+        "jpname": "ニシノフラワー"
     },
     {
         "name": "Nishino Flower (Wedding)",
-        "id": "nishino_flower_wedding"
+        "id": "nishino_flower_wedding",
+        "jpname": "ニシノフラワー"
     },
     {
         "name": "Nice Nature ",
-        "id": "nice_nature_original"
+        "id": "nice_nature_original",
+        "jpname": "ナイスネイチャ"
     },
     {
         "name": "Nice Nature (Cheerleader)",
-        "id": "nice_nature_cheerleader"
+        "id": "nice_nature_cheerleader",
+        "jpname": "ナイスネイチャ"
     },
     {
         "name": "Nice Nature (New Year)",
-        "id": "nice_nature_new_year"
+        "id": "nice_nature_new_year",
+        "jpname": "ナイスネイチャ"
     },
     {
         "name": "Neo Universe ",
-        "id": "neo_universe_original"
+        "id": "neo_universe_original",
+        "jpname": "ネオユニバース"
     },
     {
         "name": "Neo Universe (Autumn)",
-        "id": "neo_universe_autumn"
+        "id": "neo_universe_autumn",
+        "jpname": "ネオユニバース"
     },
     {
         "name": "Narita Top Road ",
-        "id": "narita_top_road_original"
+        "id": "narita_top_road_original",
+        "jpname": "ナリタトップロード"
     },
     {
         "name": "Narita Top Road (Christmas)",
-        "id": "narita_top_road_christmas"
+        "id": "narita_top_road_christmas",
+        "jpname": "ナリタトップロード"
     },
     {
         "name": "Narita Taishin ",
-        "id": "narita_taishin_original"
+        "id": "narita_taishin_original",
+        "jpname": "ナリタタイシン"
     },
     {
         "name": "Narita Taishin (Steampunk)",
-        "id": "narita_taishin_steampunk"
+        "id": "narita_taishin_steampunk",
+        "jpname": "ナリタタイシン"
     },
     {
         "name": "Narita Taishin (Mecha)",
-        "id": "narita_taishin_mecha"
+        "id": "narita_taishin_mecha",
+        "jpname": "ナリタタイシン"
     },
     {
         "name": "Narita Brian ",
-        "id": "narita_brian_original"
+        "id": "narita_brian_original",
+        "jpname": "ナリタブライアン"
     },
     {
         "name": "Narita Brian (Blaze)",
-        "id": "narita_brian_blaze"
+        "id": "narita_brian_blaze",
+        "jpname": "ナリタブライアン"
     },
     {
         "name": "Nakayama Festa ",
-        "id": "nakayama_festa_original"
+        "id": "nakayama_festa_original",
+        "jpname": "ナカヤマフェスタ"
     },
     {
         "name": "Nakayama Festa (Christmas)",
-        "id": "nakayama_festa_christmas"
+        "id": "nakayama_festa_christmas",
+        "jpname": "ナカヤマフェスタ"
     },
     {
         "name": "Mr. C.B. ",
-        "id": "mr_cb_original"
+        "id": "mr_cb_original",
+        "jpname": "ミスターシービー"
     },
     {
         "name": "Mr. C.B. (New Year)",
-        "id": "mr_cb_new_year"
+        "id": "mr_cb_new_year",
+        "jpname": "ミスターシービー"
     },
     {
         "name": "Mihono Bourbon ",
-        "id": "mihono_bourbon_original"
+        "id": "mihono_bourbon_original",
+        "jpname": "ミホノブルボン"
     },
     {
         "name": "Mihono Bourbon (Valentine)",
-        "id": "mihono_bourbon_valentine"
+        "id": "mihono_bourbon_valentine",
+        "jpname": "ミホノブルボン"
     },
     {
         "name": "Mejiro Ryan ",
-        "id": "mejiro_ryan_original"
+        "id": "mejiro_ryan_original",
+        "jpname": "メジロライアン"
     },
     {
         "name": "Mejiro Ryan (Valentine)",
-        "id": "mejiro_ryan_valentine"
+        "id": "mejiro_ryan_valentine",
+        "jpname": "メジロライアン"
     },
     {
         "name": "Mejiro Ramonu ",
-        "id": "mejiro_ramonu_original"
+        "id": "mejiro_ramonu_original",
+        "jpname": "メジロラモーヌ"
     },
     {
         "name": "Mejiro Ramonu (Wedding)",
-        "id": "mejiro_ramonu_wedding"
+        "id": "mejiro_ramonu_wedding",
+        "jpname": "メジロラモーヌ"
     },
     {
         "name": "Mejiro Palmer ",
-        "id": "mejiro_palmer_original"
+        "id": "mejiro_palmer_original",
+        "jpname": "メジロパーマー"
     },
     {
         "name": "Mejiro Palmer (Christmas)",
-        "id": "mejiro_palmer_christmas"
+        "id": "mejiro_palmer_christmas",
+        "jpname": "メジロパーマー"
     },
     {
         "name": "Mejiro McQueen ",
-        "id": "mejiro_mcqueen_original"
+        "id": "mejiro_mcqueen_original",
+        "jpname": "メジロマックイーン"
     },
     {
         "name": "Mejiro McQueen (Anime Collab)",
-        "id": "mejiro_mcqueen_anime_collab"
+        "id": "mejiro_mcqueen_anime_collab",
+        "jpname": "メジロマックイーン"
     },
     {
         "name": "Mejiro McQueen (Summer)",
-        "id": "mejiro_mcqueen_summer"
+        "id": "mejiro_mcqueen_summer",
+        "jpname": "メジロマックイーン"
     },
     {
         "name": "Mejiro Dober ",
-        "id": "mejiro_dober_original"
+        "id": "mejiro_dober_original",
+        "jpname": "メジロドーバー"
     },
     {
         "name": "Mejiro Dober (Camping)",
-        "id": "mejiro_dober_camping"
+        "id": "mejiro_dober_camping",
+        "jpname": "メジロドーバー"
     },
     {
         "name": "Mejiro Bright ",
-        "id": "mejiro_bright_original"
+        "id": "mejiro_bright_original",
+        "jpname": "メジロブライト"
     },
     {
         "name": "Mejiro Bright (Christmas)",
-        "id": "mejiro_bright_christmas"
+        "id": "mejiro_bright_christmas",
+        "jpname": "メジロブライト"
     },
     {
         "name": "Mejiro Ardan ",
-        "id": "mejiro_ardan_original"
+        "id": "mejiro_ardan_original",
+        "jpname": "メジロアルダン"
     },
     {
         "name": "Mejiro Ardan (Ballroom)",
-        "id": "mejiro_ardan_ballroom"
+        "id": "mejiro_ardan_ballroom",
+        "jpname": "メジロアルダン"
     },
     {
         "name": "Meisho Doto ",
-        "id": "meisho_doto_original"
+        "id": "meisho_doto_original",
+        "jpname": "メイショウドトウ"
     },
     {
         "name": "Meisho Doto (Halloween)",
-        "id": "meisho_doto_halloween"
+        "id": "meisho_doto_halloween",
+        "jpname": "メイショウドトウ"
     },
     {
         "name": "Mayano Top Gun ",
-        "id": "mayano_top_gun_original"
+        "id": "mayano_top_gun_original",
+        "jpname": "マヤノトップガン"
     },
     {
         "name": "Mayano Top Gun (Wedding)",
-        "id": "mayano_top_gun_wedding"
+        "id": "mayano_top_gun_wedding",
+        "jpname": "マヤノトップガン"
     },
     {
         "name": "Mayano Top Gun (Halloween)",
-        "id": "mayano_top_gun_halloween"
+        "id": "mayano_top_gun_halloween",
+        "jpname": "マヤノトップガン"
     },
     {
         "name": "Matikane-tannhauser ",
-        "id": "matikane_tannhauser_original"
+        "id": "matikane_tannhauser_original",
+        "jpname": "マチカネタンホイザ"
     },
     {
         "name": "Matikane-tannhauser (Sports Festival)",
-        "id": "matikane_tannhauser_sports_festival"
+        "id": "matikane_tannhauser_sports_festival",
+        "jpname": "マチカネタンホイザ"
     },
     {
         "name": "Matikane-fukukitaru ",
-        "id": "matikane_fukukitaru_original"
+        "id": "matikane_fukukitaru_original",
+        "jpname": "マチカネフクキタル"
     },
     {
         "name": "Matikane-fukukitaru (Full Armor)",
-        "id": "matikane_fukukitaru_full_armor"
+        "id": "matikane_fukukitaru_full_armor",
+        "jpname": "マチカネフクキタル"
     },
     {
         "name": "Marvelous Sunday ",
-        "id": "marvelous_sunday_original"
+        "id": "marvelous_sunday_original",
+        "jpname": "マーベラスサンデー"
     },
     {
         "name": "Marvelous Sunday (Halloween)",
-        "id": "marvelous_sunday_halloween"
+        "id": "marvelous_sunday_halloween",
+        "jpname": "マーベラスサンデー"
     },
     {
         "name": "Maruzensky ",
-        "id": "maruzensky_original"
+        "id": "maruzensky_original",
+        "jpname": "マルゼンスキー"
     },
     {
         "name": "Maruzensky (Summer)",
-        "id": "maruzensky_summer"
+        "id": "maruzensky_summer",
+        "jpname": "マルゼンスキー"
     },
     {
         "name": "Maruzensky (New Year)",
-        "id": "maruzensky_new_year"
+        "id": "maruzensky_new_year",
+        "jpname": "マルゼンスキー"
     },
     {
         "name": "Manhattan Cafe ",
-        "id": "manhattan_cafe_original"
+        "id": "manhattan_cafe_original",
+        "jpname": "マンハッタンカフェ"
     },
     {
         "name": "Manhattan Cafe (Valentine)",
-        "id": "manhattan_cafe_valentine"
+        "id": "manhattan_cafe_valentine",
+        "jpname": "マンハッタンカフェ"
     },
     {
         "name": "Lucky Lilac ",
-        "id": "lucky_lilac_original"
+        "id": "lucky_lilac_original",
+        "jpname": "ラッキーライラック"
     },
     {
         "name": "Loves Only You ",
-        "id": "loves_only_you_original"
+        "id": "loves_only_you_original",
+        "jpname": "ラヴズオンリーユー"
     },
     {
         "name": "Loves Only You (Beyond Dreams)",
-        "id": "loves_only_you_beyond_dreams"
+        "id": "loves_only_you_beyond_dreams",
+        "jpname": "ラヴズオンリーユー"
     },
     {
         "name": "Kitasan Black ",
-        "id": "kitasan_black_original"
+        "id": "kitasan_black_original",
+        "jpname": "キタサンブラック"
     },
     {
         "name": "Kitasan Black (New Year)",
-        "id": "kitasan_black_new_year"
+        "id": "kitasan_black_new_year",
+        "jpname": "キタサンブラック"
     },
     {
         "name": "Kitasan Black (Anime Collab)",
-        "id": "kitasan_black_anime_collab"
+        "id": "kitasan_black_anime_collab",
+        "jpname": "キタサンブラック"
     },
     {
         "name": "Kiseki ",
-        "id": "kiseki_original"
+        "id": "kiseki_original",
+        "jpname": "キセキ"
     },
     {
         "name": "King Halo ",
-        "id": "king_halo_original"
+        "id": "king_halo_original",
+        "jpname": "キングヘイロー"
     },
     {
         "name": "King Halo (Cheerleader)",
-        "id": "king_halo_cheerleader"
+        "id": "king_halo_cheerleader",
+        "jpname": "キングヘイロー"
     },
     {
         "name": "King Halo (Wedding)",
-        "id": "king_halo_wedding"
+        "id": "king_halo_wedding",
+        "jpname": "キングヘイロー"
     },
     {
         "name": "Kawakami Princess ",
-        "id": "kawakami_princess_original"
+        "id": "kawakami_princess_original",
+        "jpname": "カワカミプリンセス"
     },
     {
         "name": "Kawakami Princess (Festival)",
-        "id": "kawakami_princess_festival"
+        "id": "kawakami_princess_festival",
+        "jpname": "カワカミプリンセス"
     },
     {
         "name": "Katsuragi Ace ",
-        "id": "katsuragi_ace_original"
+        "id": "katsuragi_ace_original",
+        "jpname": "カツラギエース"
     },
     {
         "name": "Katsuragi Ace (New Year)",
-        "id": "katsuragi_ace_new_year"
+        "id": "katsuragi_ace_new_year",
+        "jpname": "カツラギエース"
     },
     {
         "name": "K.S.Miracle ",
-        "id": "ksmiracle_original"
+        "id": "ksmiracle_original",
+        "jpname": "ケイエスミラクル"
     },
     {
         "name": "K.S.Miracle (Alt Version)",
-        "id": "ksmiracle_alt_version"
+        "id": "ksmiracle_alt_version",
+        "jpname": "ケイエスミラクル"
     },
     {
         "name": "Jungle Pocket ",
-        "id": "jungle_pocket_original"
+        "id": "jungle_pocket_original",
+        "jpname": "ジャングルポケット"
     },
     {
         "name": "Jungle Pocket (Cheerleader)",
-        "id": "jungle_pocket_cheerleader"
+        "id": "jungle_pocket_cheerleader",
+        "jpname": "ジャングルポケット"
     },
     {
         "name": "Ines Fujin ",
-        "id": "ines_fujin_original"
+        "id": "ines_fujin_original",
+        "jpname": "アイネスフウジン"
     },
     {
         "name": "Ines Fujin (Valentine)",
-        "id": "ines_fujin_valentine"
+        "id": "ines_fujin_valentine",
+        "jpname": "アイネスフウジン"
     },
     {
         "name": "Ines Fujin (Deserted Island)",
-        "id": "ines_fujin_deserted_island"
+        "id": "ines_fujin_deserted_island",
+        "jpname": "アイネスフウジン"
     },
     {
         "name": "Inari One ",
-        "id": "inari_one_original"
+        "id": "inari_one_original",
+        "jpname": "イナリワン"
     },
     {
         "name": "Inari One (Festival)",
-        "id": "inari_one_festival"
+        "id": "inari_one_festival",
+        "jpname": "イナリワン"
     },
     {
         "name": "Ikuno Dictus ",
-        "id": "ikuno_dictus_original"
+        "id": "ikuno_dictus_original",
+        "jpname": "イクノディクタス"
     },
     {
         "name": "Ikuno Dictus (New Year)",
-        "id": "ikuno_dictus_new_year"
+        "id": "ikuno_dictus_new_year",
+        "jpname": "イクノディクタス"
     },
     {
         "name": "Hokko Tarumae ",
-        "id": "hokko_tarumae_original"
+        "id": "hokko_tarumae_original",
+        "jpname": "ホッコータルマエ"
     },
     {
         "name": "Hokko Tarumae (Summer Trip)",
-        "id": "hokko_tarumae_summer_trip"
+        "id": "hokko_tarumae_summer_trip",
+        "jpname": "ホッコータルマエ"
     },
     {
         "name": "Hishi Miracle ",
-        "id": "hishi_miracle_original"
+        "id": "hishi_miracle_original",
+        "jpname": "ヒシミラクル"
     },
     {
         "name": "Hishi Miracle (Alt Version)",
-        "id": "hishi_miracle_alt_version"
+        "id": "hishi_miracle_alt_version",
+        "jpname": "ヒシミラクル"
     },
     {
         "name": "Hishi Amazon ",
-        "id": "hishi_amazon_original"
+        "id": "hishi_amazon_original",
+        "jpname": "ヒシアマゾン"
     },
     {
         "name": "Hishi Amazon (Wedding)",
-        "id": "hishi_amazon_wedding"
+        "id": "hishi_amazon_wedding",
+        "jpname": "ヒシアマゾン"
     },
     {
         "name": "Hishi Akebono ",
-        "id": "hishi_akebono_original"
+        "id": "hishi_akebono_original",
+        "jpname": "ヒシアケボノ"
     },
     {
         "name": "Hishi Akebono (Halloween)",
-        "id": "hishi_akebono_halloween"
+        "id": "hishi_akebono_halloween",
+        "jpname": "ヒシアケボノ"
     },
     {
         "name": "Haru Urara ",
-        "id": "haru_urara_original"
+        "id": "haru_urara_original",
+        "jpname": "ハルウララ"
     },
     {
         "name": "Haru Urara (New Year)",
-        "id": "haru_urara_new_year"
+        "id": "haru_urara_new_year",
+        "jpname": "ハルウララ"
     },
     {
         "name": "Grass Wonder ",
-        "id": "grass_wonder_original"
+        "id": "grass_wonder_original",
+        "jpname": "グラスワンダー"
     },
     {
         "name": "Grass Wonder (Fantasy)",
-        "id": "grass_wonder_fantasy"
+        "id": "grass_wonder_fantasy",
+        "jpname": "グラスワンダー"
     },
     {
         "name": "Grass Wonder (New Year)",
-        "id": "grass_wonder_new_year"
+        "id": "grass_wonder_new_year",
+        "jpname": "グラスワンダー"
     },
     {
         "name": "Gran Alegria ",
-        "id": "gran_alegria_original"
+        "id": "gran_alegria_original",
+        "jpname": "グランアレグリア"
     },
     {
         "name": "Gold Ship ",
-        "id": "gold_ship_original"
+        "id": "gold_ship_original",
+        "jpname": "ゴールドシップ"
     },
     {
         "name": "Gold Ship (Summer)",
-        "id": "gold_ship_summer"
+        "id": "gold_ship_summer",
+        "jpname": "ゴールドシップ"
     },
     {
         "name": "Gold Ship (Project L'Arc)",
-        "id": "gold_ship_project_larc"
+        "id": "gold_ship_project_larc",
+        "jpname": "ゴールドシップ"
     },
     {
         "name": "Gold City ",
-        "id": "gold_city_original"
+        "id": "gold_city_original",
+        "jpname": "ゴールドシチー"
     },
     {
         "name": "Gold City (Festival)",
-        "id": "gold_city_festival"
+        "id": "gold_city_festival",
+        "jpname": "ゴールドシチー"
     },
     {
         "name": "Gold City (Deserted Island)",
-        "id": "gold_city_deserted_island"
+        "id": "gold_city_deserted_island",
+        "jpname": "ゴールドシチー"
     },
     {
         "name": "Gentildonna ",
-        "id": "gentildonna_original"
+        "id": "gentildonna_original",
+        "jpname": "ジェンティルドンナ"
     },
     {
         "name": "Fusaichi Pandora ",
-        "id": "fusaichi_pandora_original"
+        "id": "fusaichi_pandora_original",
+        "jpname": "フサイチパンドラ"
     },
     {
         "name": "Furioso ",
-        "id": "furioso_original"
+        "id": "furioso_original",
+        "jpname": "フリオーソ"
     },
     {
         "name": "Fuji Kiseki ",
-        "id": "fuji_kiseki_original"
+        "id": "fuji_kiseki_original",
+        "jpname": "フジキセキ"
     },
     {
         "name": "Fuji Kiseki (Ballroom)",
-        "id": "fuji_kiseki_ballroom"
+        "id": "fuji_kiseki_ballroom",
+        "jpname": "フジキセキ"
     },
     {
         "name": "Fuji Kiseki (Cheerleader)",
-        "id": "fuji_kiseki_cheerleader"
+        "id": "fuji_kiseki_cheerleader",
+        "jpname": "フジキセキ"
     },
     {
         "name": "Fine Motion ",
-        "id": "fine_motion_original"
+        "id": "fine_motion_original",
+        "jpname": "ファインモーション"
     },
     {
         "name": "Fine Motion (Wedding)",
-        "id": "fine_motion_wedding"
+        "id": "fine_motion_wedding",
+        "jpname": "ファインモーション"
     },
     {
         "name": "Fenomeno ",
-        "id": "fenomeno_original"
+        "id": "fenomeno_original",
+        "jpname": "フェノーメノ"
     },
     {
         "name": "Espoir City ",
-        "id": "espoir_city_original"
+        "id": "espoir_city_original",
+        "jpname": "エスポワールシチー"
     },
     {
         "name": "El Condor Pasa ",
-        "id": "el_condor_pasa_original"
+        "id": "el_condor_pasa_original",
+        "jpname": "エルコンドルパサー"
     },
     {
         "name": "El Condor Pasa (Fantasy)",
-        "id": "el_condor_pasa_fantasy"
+        "id": "el_condor_pasa_fantasy",
+        "jpname": "エルコンドルパサー"
     },
     {
         "name": "Eishin Flash ",
-        "id": "eishin_flash_original"
+        "id": "eishin_flash_original",
+        "jpname": "エイシンフラッシュ"
     },
     {
         "name": "Eishin Flash (Valentine)",
-        "id": "eishin_flash_valentine"
+        "id": "eishin_flash_valentine",
+        "jpname": "エイシンフラッシュ"
     },
     {
         "name": "Eishin Flash (Summer Trip)",
-        "id": "eishin_flash_summer_trip"
+        "id": "eishin_flash_summer_trip",
+        "jpname": "エイシンフラッシュ"
     },
     {
         "name": "Durandal ",
-        "id": "durandal_original"
+        "id": "durandal_original",
+        "jpname": "デュランダル"
     },
     {
         "name": "Duramente ",
-        "id": "duramente_original"
+        "id": "duramente_original",
+        "jpname": "ドゥラメンテ"
     },
     {
         "name": "Dream Journey ",
-        "id": "dream_journey_original"
+        "id": "dream_journey_original",
+        "jpname": "ドリームジャーニー"
     },
     {
         "name": "Dream Journey (Christmas)",
-        "id": "dream_journey_christmas"
+        "id": "dream_journey_christmas",
+        "jpname": "ドリームジャーニー"
     },
     {
         "name": "Daring Heart ",
-        "id": "daring_heart_original"
+        "id": "daring_heart_original",
+        "jpname": "デアリングハート"
     },
     {
         "name": "Dantsu Flame ",
-        "id": "dantsu_flame_original"
+        "id": "dantsu_flame_original",
+        "jpname": "ダンツフレーム"
     },
     {
         "name": "Daiwa Scarlet ",
-        "id": "daiwa_scarlet_original"
+        "id": "daiwa_scarlet_original",
+        "jpname": "ダイワスカーレット"
     },
     {
         "name": "Daiwa Scarlet (Christmas)",
-        "id": "daiwa_scarlet_christmas"
+        "id": "daiwa_scarlet_christmas",
+        "jpname": "ダイワスカーレット"
     },
     {
         "name": "Daitaku Helios ",
-        "id": "daitaku_helios_original"
+        "id": "daitaku_helios_original",
+        "jpname": "ダイタクヘリオス"
     },
     {
         "name": "Daitaku Helios (Ballroom)",
-        "id": "daitaku_helios_ballroom"
+        "id": "daitaku_helios_ballroom",
+        "jpname": "ダイタクヘリオス"
     },
     {
         "name": "Daiichi Ruby ",
-        "id": "daiichi_ruby_original"
+        "id": "daiichi_ruby_original",
+        "jpname": "ダイイチルビー"
     },
     {
         "name": "Daiichi Ruby (Ballroom)",
-        "id": "daiichi_ruby_ballroom"
+        "id": "daiichi_ruby_ballroom",
+        "jpname": "ダイイチルビー"
     },
     {
         "name": "Curren Chan ",
-        "id": "curren_chan_original"
+        "id": "curren_chan_original",
+        "jpname": "カレンチャン"
     },
     {
         "name": "Curren Chan (Wedding)",
-        "id": "curren_chan_wedding"
+        "id": "curren_chan_wedding",
+        "jpname": "カレンチャン"
     },
     {
         "name": "Copano Rickey ",
-        "id": "copano_rickey_original"
+        "id": "copano_rickey_original",
+        "jpname": "コパノリッキー"
     },
     {
         "name": "Copano Rickey (Parade)",
-        "id": "copano_rickey_parade"
+        "id": "copano_rickey_parade",
+        "jpname": "コパノリッキー"
     },
     {
         "name": "Chrono Genesis ",
-        "id": "chrono_genesis_original"
+        "id": "chrono_genesis_original",
+        "jpname": "クロノジェネシス"
     },
     {
         "name": "Cheval Grand ",
-        "id": "cheval_grand_original"
+        "id": "cheval_grand_original",
+        "jpname": "シュヴァルグラン"
     },
     {
         "name": "Cheval Grand (Summer)",
-        "id": "cheval_grand_summer"
+        "id": "cheval_grand_summer",
+        "jpname": "シュヴァルグラン"
     },
     {
         "name": "Cesario ",
-        "id": "cesario_original"
+        "id": "cesario_original",
+        "jpname": "シーザリオ"
     },
     {
         "name": "Cesario (Wedding)",
-        "id": "cesario_wedding"
+        "id": "cesario_wedding",
+        "jpname": "シーザリオ"
     },
     {
         "name": "Calstone Light O ",
-        "id": "calstone_light_o_original"
+        "id": "calstone_light_o_original",
+        "jpname": "カルストンライトオ"
     },
     {
         "name": "Buena Vista ",
-        "id": "buena_vista_original"
+        "id": "buena_vista_original",
+        "jpname": "ブエナビスタ"
     },
     {
         "name": "Bubble Gum Fellow ",
-        "id": "bubble_gum_fellow_original"
+        "id": "bubble_gum_fellow_original",
+        "jpname": "バブルガムフェロー"
     },
     {
         "name": "Bubble Gum Fellow (New Year)",
-        "id": "bubble_gum_fellow_new_year"
+        "id": "bubble_gum_fellow_new_year",
+        "jpname": "バブルガムフェロー"
     },
     {
         "name": "Biwa Hayahide ",
-        "id": "biwa_hayahide_original"
+        "id": "biwa_hayahide_original",
+        "jpname": "ビワハヤヒデ"
     },
     {
         "name": "Biwa Hayahide (Christmas)",
-        "id": "biwa_hayahide_christmas"
+        "id": "biwa_hayahide_christmas",
+        "jpname": "ビワハヤヒデ"
     },
     {
         "name": "Biwa Hayahide (Mecha)",
-        "id": "biwa_hayahide_mecha"
+        "id": "biwa_hayahide_mecha",
+        "jpname": "ビワハヤヒデ"
     },
     {
         "name": "Biko Pegasus ",
-        "id": "biko_pegasus_original"
+        "id": "biko_pegasus_original",
+        "jpname": "ビコーペガサス"
     },
     {
         "name": "Believe ",
-        "id": "believe_original"
+        "id": "believe_original",
+        "jpname": "ビリーヴ"
     },
     {
         "name": "Bamboo Memory ",
-        "id": "bamboo_memory_original"
+        "id": "bamboo_memory_original",
+        "jpname": "バンブーメモリー"
     },
     {
         "name": "Bamboo Memory (Summer Trip)",
-        "id": "bamboo_memory_summer_trip"
+        "id": "bamboo_memory_summer_trip",
+        "jpname": "バンブーメモリー"
     },
     {
         "name": "Aston Machan ",
-        "id": "aston_machan_original"
+        "id": "aston_machan_original",
+        "jpname": "アストンマーチャン"
     },
     {
         "name": "Aston Machan (Valentine)",
-        "id": "aston_machan_valentine"
+        "id": "aston_machan_valentine",
+        "jpname": "アストンマーチャン"
     },
     {
         "name": "Almond Eye ",
-        "id": "almond_eye_original"
+        "id": "almond_eye_original",
+        "jpname": "アーモンドアイ"
     },
     {
         "name": "Air Shakur ",
-        "id": "air_shakur_original"
+        "id": "air_shakur_original",
+        "jpname": "エアシャカール"
     },
     {
         "name": "Air Shakur (Halloween)",
-        "id": "air_shakur_halloween"
+        "id": "air_shakur_halloween",
+        "jpname": "エアシャカール"
     },
     {
         "name": "Air Messiah ",
-        "id": "air_messiah_original"
+        "id": "air_messiah_original",
+        "jpname": "エアメサイア"
     },
     {
         "name": "Air Groove ",
-        "id": "air_groove_original"
+        "id": "air_groove_original",
+        "jpname": "エアグルーヴ"
     },
     {
         "name": "Air Groove (Wedding)",
-        "id": "air_groove_wedding"
+        "id": "air_groove_wedding",
+        "jpname": "エアグルーヴ"
     },
     {
         "name": "Agnes Tachyon ",
-        "id": "agnes_tachyon_original"
+        "id": "agnes_tachyon_original",
+        "jpname": "アグネスタキオン"
     },
     {
         "name": "Agnes Tachyon (Summer)",
-        "id": "agnes_tachyon_summer"
+        "id": "agnes_tachyon_summer",
+        "jpname": "アグネスタキオン"
     },
     {
         "name": "Agnes Tachyon (Alt Version)",
-        "id": "agnes_tachyon_alt_version"
+        "id": "agnes_tachyon_alt_version",
+        "jpname": "アグネスタキオン"
     },
     {
         "name": "Agnes Digital ",
-        "id": "agnes_digital_original"
+        "id": "agnes_digital_original",
+        "jpname": "アグネスデジタル"
     },
     {
         "name": "Agnes Digital (Halloween)",
-        "id": "agnes_digital_halloween"
+        "id": "agnes_digital_halloween",
+        "jpname": "アグネスデジタル"
     },
     {
         "name": "Admire Vega ",
-        "id": "admire_vega_original"
+        "id": "admire_vega_original",
+        "jpname": "アドマイヤベガ"
     },
     {
         "name": "Admire Vega (Christmas)",
-        "id": "admire_vega_christmas"
+        "id": "admire_vega_christmas",
+        "jpname": "アドマイヤベガ"
     },
     {
         "name": "Admire Groove ",
-        "id": "admire_groove_original"
+        "id": "admire_groove_original",
+        "jpname": "アドマイヤグルーヴ"
+    },
+    {
+        "name": "Red Desire ",
+        "id": "red_desire_original",
+        "jpname": "レッドディザイア"
+    },
+    {
+        "name": "Gentildonna (Wedding)",
+        "id": "gentildonna_wedding",
+        "jpname": "ジェンティルドンナ"
+    },
+    {
+        "name": "Manhattan Cafe (Wedding)",
+        "id": "manhattan_cafe_wedding",
+        "jpname": "マンハッタンカフェ"
+    },
+    {
+        "name": "Curren Bouquetd'or ",
+        "id": "curren_bouquetdor_original",
+        "jpname": "カレンブーケドール"
     }
 ]

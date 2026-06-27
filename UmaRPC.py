@@ -10,8 +10,10 @@ from screen_detector import (
     grab_screen,
     detect_state_from_screen,
     detect_scenario_from_screen,
+    detect_training_layout,
     detect_uma_text_from_screen,
 )
+
 from pathlib import Path
 from PIL import Image
 from rapidfuzz import fuzz
@@ -27,13 +29,13 @@ DISCORD_CLIENT_ID = "1503392534611886261"
 # Screen detector nanti bisa punya interval sendiri, misalnya 2 detik.
 CHECK_INTERVAL = 5
 DETECTOR_INTERVAL = 0.5
-OCR_INTERVAL = 5
 PROCESS_NAMES = ["umamusume.exe", "UmamusumePrettyDerby.exe"]
 
 BASE_DIR = Path(__file__).resolve().parent
 UMA_LIST_PATH = BASE_DIR / "uma_list.json"
 SCENARIO_PATH = BASE_DIR / "Uma_Scenario.json"
 ICON_PATH = BASE_DIR / "icon.png"
+CACHE_PATH = BASE_DIR / "cache.json"
 
 # =========================
 # LOAD JSON
@@ -47,9 +49,43 @@ def load_json(path: Path, fallback):
         print(f"[WARN] Failed to load {path.name}: {e}")
         return fallback
 
+def load_cache():
+    return load_json(
+        CACHE_PATH,
+        {
+            "version": 1,
+            "training": False,
+            "uma_id": None,
+            "scenario_id": None,
+        },
+    )
+
+
+def save_cache():
+    data = {
+        "version": 1,
+        "training": SESSION.ready(),
+        "uma_id": SESSION.uma["id"] if SESSION.uma else None,
+        "scenario_id": SESSION.scenario["id"] if SESSION.scenario else None,
+    }
+
+    try:
+        with open(CACHE_PATH, "w", encoding="utf-8") as f:
+            json.dump(data, f, indent=4)
+    except Exception as e:
+        print(f"[WARN] Failed to save cache: {e}")
+
+
+def clear_cache():
+    try:
+        if CACHE_PATH.exists():
+            CACHE_PATH.unlink()
+    except Exception as e:
+        print(f"[WARN] Failed to clear cache: {e}")
 
 UMA_DATA = load_json(UMA_LIST_PATH, [])
 SCENARIO_DATA = load_json(SCENARIO_PATH, [])
+
 
 UMA_NAMES = [u["name"] for u in UMA_DATA if "name" in u]
 SCENARIO_NAMES = [s["name"] for s in SCENARIO_DATA if "name" in s]
@@ -65,9 +101,24 @@ rpc_running = False
 start_timestamp = None
 last_rpc_payload = None
 last_detected_state = None
-last_ocr_time = 0
-cached_uma = None
-cached_uma_text = ""
+uma_ocr_done = False
+
+class TrainingSession:
+    def __init__(self):
+        self.clear()
+
+    def clear(self):
+        self.uma = None
+        self.uma_text = ""
+        self.scenario = None
+
+    def ready(self):
+        return (
+            self.uma is not None
+            and self.scenario is not None
+        )
+
+SESSION = TrainingSession()
 
 # =========================
 # TKINTER SETUP
@@ -104,7 +155,26 @@ def normalize_process_name(name: str) -> str:
 def normalize_text(text: str) -> str:
     return (text or "").lower().strip()
 
+def update_training_session(
+    uma=None,
+    uma_text=None,
+    scenario=None,
+):
+    changed = False
 
+    if uma is not None and SESSION.uma != uma:
+        SESSION.uma = uma
+        changed = True
+
+    if uma_text:
+        SESSION.uma_text = uma_text
+
+    if scenario is not None and SESSION.scenario != scenario:
+        SESSION.scenario = scenario
+        changed = True
+
+    if changed:
+        save_cache()
 # =========================
 # DISCORD HELPERS
 # =========================
@@ -332,6 +402,29 @@ def find_scenario(query: str):
 
     return None
 
+def find_uma_by_id(uma_id):
+    for uma in UMA_DATA:
+        if uma.get("id") == uma_id:
+            return uma
+    return None
+
+def find_scenario_by_id(scenario_id):
+    for scenario in SCENARIO_DATA:
+        if scenario.get("id") == scenario_id:
+            return scenario
+    return None
+
+CACHE = load_cache()
+
+if CACHE.get("training"):
+    print(
+        f"[CACHE] Restored "
+        f"{CACHE['uma_id']} "
+        f"/ {CACHE['scenario_id']}"
+    )
+    
+    SESSION.uma = find_uma_by_id(CACHE.get("uma_id"))
+    SESSION.scenario = find_scenario_by_id(CACHE.get("scenario_id"))
 
 # =========================
 # MAIN ACTIONS
@@ -357,7 +450,12 @@ def start_rpc():
         uma_name=uma["name"],
         scenario_name=scenario["name"],
     )
-
+    print(
+        "DEBUG:",
+        scenario is not None,
+        uma is not None,
+        uma["name"] if uma else None,
+    )
 
 def stop_rpc():
     if is_uma_running():
@@ -375,7 +473,7 @@ def watcher_loop():
 
         if running and not was_running:
             set_lobby_rpc()
-            # root.after(0, root.deiconify)  # disabled: keep UI hidden
+            print("Lobby RPC")
         elif not running and was_running:
             clear_rpc()
             set_status("Waiting for Umamusume...")
@@ -406,9 +504,7 @@ def tray_exit(icon=None, item=None):
 
 def detector_loop():
     global last_detected_state
-    global last_ocr_time
-    global cached_uma
-    global cached_uma_text
+    global uma_ocr_done
 
     while True:
         if not is_uma_running():
@@ -420,42 +516,89 @@ def detector_loop():
             state, score, scores = detect_state_from_screen(screen)
 
             if state == "lobby":
+
+                if last_detected_state == "training":
+                    SESSION.clear()
+                    clear_cache()
+                    
+
                 if last_detected_state != "lobby":
                     set_lobby_rpc()
                     last_detected_state = "lobby"
                     set_status(f"Detected: Lobby ({score:.2f})")
+                
 
             elif state == "training":
                 # Scenario auto dari template detector
+                scenario_score = 1.0
+                scenario_scores = {}
+
                 scenario, scenario_score, scenario_scores = detect_scenario_from_screen(
                     screen,
-                    SCENARIO_DATA
+                    SCENARIO_DATA,
                 )
 
-                # Uma auto dari OCR, tapi OCR cuma jalan tiap OCR_INTERVAL
-                now = time.time()
+                if scenario:
+                    update_training_session(
+                        scenario=scenario,
+                    )
 
-                if now - last_ocr_time >= OCR_INTERVAL or cached_uma is None:
+                scenario = SESSION.scenario
+
+                layout, layout_score = detect_training_layout(screen)
+                print("LAYOUT:", layout)
+
+                if layout == "noncomp":
+                    uma_ocr_done = False
+
+                # Uma auto dari OCR, tapi OCR cuma jalan tiap OCR_INTERVAL
+                
+
+                uma = SESSION.uma
+                uma_text = SESSION.uma_text
+
+                print(
+                    "layout=",
+                    layout,
+                    "| uma_ocr_done=",
+                    uma_ocr_done,
+                )
+
+                if (layout == "comp" and not uma_ocr_done):
+                    print("OCR START")
                     uma_text = detect_uma_text_from_screen(screen)
+                    
+
+                    update_training_session(
+                        uma_text=uma_text,
+                    )
+
                     uma = find_uma(uma_text)
+                    print("OCR:", uma_text)
+                    print("UMA:", uma["name"] if uma else None)
 
                     if uma:
-                        cached_uma = uma
-                        cached_uma_text = uma_text
+                        update_training_session(
+                            uma=uma,
+                        )
+                        uma_ocr_done = True
+                    
+                uma = SESSION.uma
+                scenario = SESSION.scenario
 
-                    last_ocr_time = now
-                    # print("UMA OCR:", uma_text)
-
-                else:
-                    uma = cached_uma
-                    uma_text = cached_uma_text
-
+                print(
+                    "RPC CHECK:",
+                    scenario is not None,
+                    uma is not None,
+                    SESSION.uma["name"] if SESSION.uma else None,
+                )
+                
                 if scenario and uma:
                     update_training_rpc(
                         uma_name=uma["name"],
                         scenario_name=scenario["name"],
                     )
-
+                    
                     last_detected_state = "training"
 
                     set_status(

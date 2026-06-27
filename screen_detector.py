@@ -2,9 +2,9 @@ import time
 from pathlib import Path
 from rapidocr_onnxruntime import RapidOCR
 import cv2
-import mss
 import numpy as np
-
+from windows_capture import WindowsCapture
+import threading
 
 
 # =========================
@@ -29,8 +29,14 @@ STATE_TEMPLATES = {
     "training": STATE_TEMPLATE_DIR / "training.png",
 }
 
+LAYOUT_TEMPLATES = {
+    "comp": STATE_TEMPLATE_DIR / "comp.png",
+    "noncomp": STATE_TEMPLATE_DIR / "noncomp.png",
+}
+
 LOADED_STATE_TEMPLATES = None
 LOADED_SCENARIO_TEMPLATES = None
+LOADED_LAYOUT_TEMPLATES = None
 SCENARIO_BY_NAME = {}
 
 # Crop area nama Uma di training screen.
@@ -41,10 +47,40 @@ REFERENCE_WIDTH = 1920
 REFERENCE_HEIGHT = 1080
 REFERENCE_ASPECT = REFERENCE_WIDTH / REFERENCE_HEIGHT
 
-UMA_NAME_CROP = (1180, 190, 1650, 290)
-STATE_SEARCH_CROP = (1620, 0, 1920, 1080)
+UMA_NAME_CROP = (1180, 250, 1450, 300)
+STATE_SEARCH_CROP = (1720, 0, 1920, 1080)
 SCENARIO_SEARCH_CROP = (1055, 90, 1155, 160)
-OCR_ENGINE = RapidOCR()
+MODELS_DIR = BASE_DIR / "models"
+
+OCR_ENGINE = RapidOCR(
+    det_model_path=str(MODELS_DIR / "ch_PP-OCRv5_det_mobile.onnx"),
+    rec_model_path=str(MODELS_DIR / "ch_PP-OCRv5_rec_mobile.onnx"),
+)
+
+LATEST_FRAME = None
+
+LAST_UMA_IMAGE = None
+LAST_UMA_TEXT = ""
+
+CAPTURE = WindowsCapture(
+    window_name="umamusume",
+    cursor_capture=False,
+    draw_border=False,
+)
+
+@CAPTURE.event
+def on_frame_arrived(frame, control):
+    global LATEST_FRAME
+
+    LATEST_FRAME = cv2.cvtColor(
+        frame.frame_buffer,
+        cv2.COLOR_BGRA2BGR,
+    )
+
+
+@CAPTURE.event
+def on_closed():
+    print("Capture closed")
 
 # =========================
 # DEBUG
@@ -67,20 +103,26 @@ def print_template_debug():
 # SCREENSHOT
 # =========================
 
+
+def _capture_thread():
+    while True:
+        try:
+            CAPTURE.start()
+        except Exception as e:
+            print("Capture error:", e)
+            time.sleep(1)
+
+
+threading.Thread(
+    target=_capture_thread,
+    daemon=True,
+).start()
+
 def grab_screen():
-    """
-    Capture primary monitor.
-    Returns OpenCV BGR image.
-    """
-    with mss.mss() as sct:
-        monitor = sct.monitors[1]
-        shot = sct.grab(monitor)
+    while LATEST_FRAME is None:
+        time.sleep(0.01)
 
-        img = np.array(shot)
-        img = cv2.cvtColor(img, cv2.COLOR_BGRA2BGR)
-
-        return img
-
+    return LATEST_FRAME.copy()
 
 def get_game_viewport(screen):
     """
@@ -157,12 +199,10 @@ def crop_right_sidebar(screen, width=260, y1=0, y2=760):
     h, w = screen.shape[:2]
     return screen[y1:min(y2, h), max(0, w - width):w]
 
-def ocr_image(image) -> str:
-    """
-    OCR image using RapidOCR.
-    Returns joined text.
-    """
+def ocr_image(image):
     result, _ = OCR_ENGINE(image)
+
+    #print(result)
 
     if not result:
         return ""
@@ -170,13 +210,12 @@ def ocr_image(image) -> str:
     texts = []
 
     for line in result:
-        # RapidOCR format biasanya:
-        # [box, text, confidence]
+        print(line)
+
         if len(line) >= 2:
             texts.append(str(line[1]))
 
-    return " ".join(texts).strip()
-
+    return " ".join(texts)
 
 def detect_uma_text():
     """
@@ -351,12 +390,18 @@ def resize_template_for_screen(screen, template):
     return cv2.resize(template, (new_w, new_h), interpolation=cv2.INTER_AREA)
 
 
-def match_loaded_template(screen, template) -> float:
+def match_loaded_template(screen, template, search_crop=None) -> float:
     if template is None:
         return 0.0
 
     # Match cuma di area game 16:9, bukan full monitor yang mungkin ada letterbox.
-    game_screen = crop_game_viewport(screen)
+    if search_crop is None:
+        game_screen = crop_game_viewport(screen)
+    else:
+        game_screen = crop_reference_box(
+            screen,
+            search_crop,
+        )
     template = resize_template_for_screen(screen, template)
 
     screen_h, screen_w = game_screen.shape[:2]
@@ -374,11 +419,11 @@ def match_loaded_template(screen, template) -> float:
     _, max_val, _, _ = cv2.minMaxLoc(result)
     return float(max_val)
 
-def best_loaded_template_match(screen, loaded_templates: dict, threshold: float):
+def best_loaded_template_match(screen, loaded_templates: dict, threshold: float, search_crop=None):
     scores = {}
 
     for name, template in loaded_templates.items():
-        scores[name] = match_loaded_template(screen, template)
+        scores[name] = match_loaded_template(screen, template, search_crop)
 
     if not scores:
         return "unknown", 0.0, {}
@@ -535,14 +580,45 @@ def detect_state_from_screen(screen):
         screen=screen,
         loaded_templates=LOADED_STATE_TEMPLATES,
         threshold=STATE_THRESHOLD,
+        search_crop=STATE_SEARCH_CROP,
     )
 
+def detect_training_layout(screen):
+    global LOADED_LAYOUT_TEMPLATES
+
+    if LOADED_LAYOUT_TEMPLATES is None:
+        LOADED_LAYOUT_TEMPLATES = preload_templates(LAYOUT_TEMPLATES)
+
+    layout, score, scores = best_loaded_template_match(
+        screen=screen,
+        loaded_templates=LOADED_LAYOUT_TEMPLATES,
+        threshold=0.80,
+        search_crop=STATE_SEARCH_CROP
+    )
+
+    return layout, score
+
 def detect_uma_text_from_screen(screen):
+    global LAST_UMA_IMAGE
+    global LAST_UMA_TEXT
+
     crop = crop_reference_box(screen, UMA_NAME_CROP)
-    return ocr_image(crop)
+
+    if (
+        LAST_UMA_IMAGE is not None
+        and np.array_equal(crop, LAST_UMA_IMAGE)
+    ):
+        return LAST_UMA_TEXT
+
+    text = ocr_image(crop)
+
+    LAST_UMA_IMAGE = crop.copy()
+    LAST_UMA_TEXT = text
+
+    return text
 
 
-def detect_scenario_from_screen(screen, scenario_data: list[dict]):
+def detect_scenario_from_screen(screen, scenario_data: list[dict], search_crop=None):
     global LOADED_SCENARIO_TEMPLATES
     global SCENARIO_BY_NAME
 
@@ -555,6 +631,7 @@ def detect_scenario_from_screen(screen, scenario_data: list[dict]):
         screen=screen,
         loaded_templates=LOADED_SCENARIO_TEMPLATES,
         threshold=SCENARIO_THRESHOLD,
+        search_crop=None,
     )
 
     if scenario_name == "unknown":
@@ -603,13 +680,19 @@ if __name__ == "__main__":
 
     OCR_TEST_INTERVAL = 7
     SCENARIO_TEST_INTERVAL = 20
-
+    
     while True:
+
         loop_start = time.time()
 
+        t0 = time.time()
         screen = grab_screen()
+        t1 = time.time()
 
         state, state_score, state_scores = detect_state_from_screen(screen)
+        t2 = time.time()
+        t3 = t2
+        t4 = t3
 
         now = time.time()
 
@@ -622,20 +705,23 @@ if __name__ == "__main__":
                 scenario_data,
             )
             last_scenario_time = now
+            t3 = time.time()
+
         else:
             scenario_scores = {}
 
         if now - last_ocr_time >= OCR_TEST_INTERVAL:
             cached_uma_text = detect_uma_text_from_screen(screen)
             last_ocr_time = now
-
+            t4 = time.time()
         scenario_name = cached_scenario["name"] if cached_scenario else "unknown"
 
         print(
-            f"STATE: {state} ({state_score:.3f}) | "
-            f"SCENARIO: {scenario_name} ({cached_scenario_score:.3f}) | "
-            f"UMA OCR: {cached_uma_text} | "
-            f"loop: {time.time() - loop_start:.2f}s"
+            f"grab={t1-t0:.3f}s | "
+            f"state={t2-t1:.3f}s | "
+            f"scenario={t3-t2:.3f}s | "
+            f"ocr={t4-t3:.3f}s | "
+            f"total={time.time()-loop_start:.3f}s"
         )
 
         time.sleep(1)
