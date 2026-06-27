@@ -27,7 +27,7 @@ echo.
 echo DISCLAIMER / IMPORTANT NOTES:
 echo.
 echo 1. This tool still has some limitations:
-echo    - May cause occasional CPU spikes when OCR / detector runs.
+echo    - OCR may occasionally retry while UI elements are fading in.
 echo    - Does not work in Portrait mode.
 echo.
 echo 2. You MUST install the Hachimi mod first.
@@ -56,7 +56,7 @@ echo.
 echo DISCLAIMER / CATATAN PENTING:
 echo.
 echo 1. Tool ini masih punya beberapa kekurangan:
-echo    - Bisa spike CPU sesekali saat OCR / detector jalan.
+echo    - OCR terkadang akan mengulang pembacaan saat elemen UI masih fade/transparan.
 echo    - Tidak berfungsi di mode portrait.
 echo.
 echo 2. Wajib install mod Hachimi dulu.
@@ -113,7 +113,7 @@ rapidfuzz ^
 pypresence ^
 rapidocr-onnxruntime ^
 opencv-python ^
-mss ^
+windows-capture ^
 numpy
 
 echo.
